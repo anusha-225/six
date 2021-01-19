@@ -1,0 +1,23 @@
+package gridenzen1;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import com.gridizen.qa.com.TestBase;
+import com.gridizen.qa.pages.CreateAccount;
+import com.gridizen.qa.pages.LoginPage;
+
+public class CreateAccountTest extends TestBase {
+
+   public LoginPage loginPage1;
+   public CreateAccount createAccount;
+	@Test
+    public void one() throws IOException, InterruptedException {
+   	intialiszation();
+   	loginPage1=new LoginPage();
+   	loginPage1.clickJoin();
+   	createAccount=new CreateAccount();
+   	createAccount.one();
+   } 
+}
